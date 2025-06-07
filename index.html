@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Milira — Handmade Crochet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+     background-color: #fffafc;
+     font-family: 'Comic Neue', cursive;
+     padding: 30px;
+     color: #5a3e36;
+      }
+      
+     h1 {
+     text-align: center;
+     color: #e673a7;
+     font-size: 3.5em;
+     font-weight: 700;
+     margin-bottom: 10px;
+     text-shadow: 1px 1px #fff;
+     }
+
+
+      p {
+        font-size: 1.2em;
+        margin: 10px 0 20px;
+      }
+
+      a.button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #ffb6c1;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      a.button:hover {
+        background-color: #a5557d;
+      }
+      
+      h2 {
+        font-size: 2em;
+        margin-top: 60px;
+        color: #a0522d;
+     }
+
+     .product-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+     }
+
+     .product-card {
+        background: #ffeef2;
+        border-radius: 20px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+     }
+
+     .product-card img {
+     border-radius: 15px;
+     width: 100%;
+     height: auto;
+     }
+
+     .product-card h3 {
+     margin: 15px 0 5px;
+     font-size: 1.3em;
+     }
+
+     .product-card p {
+     font-size: 0.95em;
+     margin-bottom: 15px;
+     }
+     .insta-float {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #ffb6c1;
+     color: white;
+     font-size: 24px;
+     padding: 12px 14px;
+     border-radius: 50%;
+     box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+     text-decoration: none;
+     z-index: 1000;
+     transition: transform 0.3s ease;
+     }
+
+     .insta-float:hover {
+     background-color: #ff69b4;
+     transform: scale(1.1);
+     }
+     #backToTop {
+     display: none; /* Hidden by default */
+     position: fixed;
+     bottom: 80px; /* Above the Insta button */
+     right: 20px;
+     z-index: 1000;
+     font-size: 24px;
+     background-color: #f5a8b8;
+     color: white;
+     border: none;
+     padding: 12px 16px;
+     border-radius: 50%;
+     box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     }
+
+     #backToTop:hover {
+     background-color: #e673a7;
+     transform: scale(1.1);
+     }
+     /* Make product grid adapt to screen size */
+     .product-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+     gap: 15px;
+     padding: 10px;
+     } 
+     .product-grid img {
+     width: 100%;
+     height: auto;
+     border-radius: 15px;
+     object-fit: cover;
+     }
+     @media (max-width: 600px) {
+     body {
+     font-size: 16px; /* slightly smaller for phones */
+     }
+
+     h1 {
+     font-size: 1.8em;
+     }
+
+     /* Adjust button sizes */
+     #backToTop, .insta-float {
+     font-size: 20px;
+     padding: 10px 12px;
+     bottom: 15px;
+     right: 15px;
+     }
+     }
+     .container {
+     max-width: 900px;
+     margin: auto;
+     padding: 10px;
+     }
+     .instagram-message {
+     text-align: center;
+     margin-top: 25px;
+     font-size: 1.2em;
+     font-family: 'Comic Sans MS', cursive, sans-serif; /* or your cute font */
+     color: #e673a7; /* soft pink color */
+     padding: 0 15px; /* padding so it doesn’t touch edges on small screens */
+     }
+     .site-footer {
+     background-color: #ffe0f0;
+     color: #b03c80;
+     text-align: center;
+     padding: 20px 10px;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     font-size: 1em;
+     margin-top: 40px;
+     border-top: 2px dashed #f7a1c4;
+     }
+
+     .site-footer a {
+     color: #e673a7;
+     text-decoration: none;
+     font-weight: bold;
+     }
+
+     .site-footer a:hover {
+     text-decoration: underline;
+     }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>🧸 Welcome to Milira!</h1>
+    <p>Handmade crochet plushies, bags & keychains and many more — made with love 💖</p>
+    <a class="button" href="https://instagram.com/weformilira" target="_blank">Message on Instagram</a>
+      <h2>🐾 Our Products</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.25 PM (1).jpeg" alt="Crocheted Bows!">
+        <h3>Red and White bows</h3>
+        <p>Adorable red and white bows 💖</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.26 PM (1).jpeg" alt="Bag 1">
+        <h3>Heart Bag</h3>
+        <p>Red and white bag — perfect for dreamy outfits ☁️💼</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.26 PM.jpeg" alt="Daisy">
+        <h3>Daisy flower</h3>
+        <p>Lightweight daisy flower for enthusiastic lovers🌼📖</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+    
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.26 PM (3).jpeg" alt="Tulip boquet">
+        <h3>Tulip boquet</h3>
+        <p>Tulip boquet for your loved ones 💖</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+    
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.27 PM (1).jpeg" alt="Sunflower Keychain">
+        <h3>Sunflower Keychain</h3>
+        <p>Sunflower Keychain 🌻😊</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.27 PM (2).jpeg" alt="Mochi plushie">
+        <h3>Mochi small plushie</h3>
+        <p>Cute plushie named mochi is here 😍</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.27 PM (3).jpeg" alt="Sunflower pot">
+        <h3>Sunflower pot</h3>
+        <p>Do your crocheted gardening now! 🏡😳</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.27 PM.jpeg" alt="Luffy plushie">
+        <h3>Small Luffy plushie</h3>
+        <p>Kaizouko ou ni ore wa naru! Luffy is here! 🏴‍☠️</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.28 PM (2).jpeg" alt="Batman boquet">
+        <h3>Batman boquet</h3>
+        <p>Now we can save the city in flower form! 🌺🖤</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.48.28 PM (3).jpeg" alt="Bluw bow totebag">
+        <h3>Blue bow totebag</h3>
+        <p>Wow! blue like sky and cute like bows? 💙🎀💎⛅</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-06-07 at 7.49.46 PM.jpeg" alt="Bunny plushie">
+        <h3>Bunny plushie</h3>
+        <p>omg! so cute, A BUNNY PLUSHIE !!! 🐇💟🤩</p>
+        <a class="button" href="https://instagram.com/weformilira" target="_blank">Message to Order</a>
+      </div>
+     <p style="text-align:center; margin-top: 40px; font-size: 1.1em; color: #5a3e36;">
+     Want to see more cute crochet items?  
+     Visit us on <a href="https://instagram.com/weformilira" target="_blank" style="color: #ff69b4; text-decoration: none;">Instagram</a>  
+     and send us a message to order! 💌🧶
+     </p>
+     </div>
+     <a href="https://instagram.com/weformilira" 
+   target="_blank" 
+   class="insta-float" 
+   title="Message us on Instagram 💌">
+  💌
+     </a>
+<button id="backToTop" title="Back to top">⬆️</button>
+<script>
+  // Get the button
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // When the user scrolls down 100px from the top, show the button
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  // When the button is clicked, scroll to the top smoothly
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+<footer class="site-footer">
+  <p>🧶 Thank you for visiting Milira! For more handmade cuteness, follow us on <a href="https://instagram.com/yourusername" target="_blank">@weformilira</a> 💖</p>
+  <p>© 2025 Milira. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
